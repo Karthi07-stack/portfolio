@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Maya Chen</title>
+  <meta name="description" content="Get in touch with Maya Chen about frontend development or accessibility consulting work." />
+  <link rel="canonical" href="https://mayachen.dev/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Maya Chen" />
+  <meta property="og:description" content="Get in touch about frontend development or accessibility consulting work." />
+  <meta property="og:url" content="https://mayachen.dev/contact.html" />
+  <meta name="theme-color" content="#f5f3ee" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Maya<span>.</span>Chen</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">☰</span> Menu
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> / <span aria-current="page">Contact</span>
+      </nav>
+    </div>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;form&gt; &gt; &lt;fieldset&gt; &gt; &lt;legend&gt; + labelled inputs</span>
+        <div class="section__head">
+          <h1 id="contact-heading">Get in touch</h1>
+          <p>Every field below has a real, clicked-to-focus <code>&lt;label&gt;</code>, a logical tab order, and no keyboard traps. Required fields are marked and enforced with <code>aria-required</code>.</p>
+        </div>
+
+        <div class="form-shell">
+          <form id="contact-form" novalidate>
+            <fieldset>
+              <legend>Your details</legend>
+
+              <div class="field" id="field-name">
+                <label class="required" for="name">Full name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="name-error"
+                />
+                <p class="error-msg" id="name-error" role="alert" hidden>Enter your full name.</p>
+              </div>
+
+              <div class="field" id="field-email">
+                <label class="required" for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  inputmode="email"
+                  aria-required="true"
+                  aria-describedby="email-hint email-error"
+                />
+                <p class="hint" id="email-hint">We'll only use this to reply to your message.</p>
+                <p class="error-msg" id="email-error" role="alert" hidden>Enter a valid email address.</p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Your message</legend>
+
+              <div class="field" id="field-subject">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" autocomplete="off">
+                  <option value="">Select a topic (optional)</option>
+                  <option value="project">New project inquiry</option>
+                  <option value="collab">Collaboration</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="field" id="field-message">
+                <label class="required" for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  aria-required="true"
+                  aria-describedby="message-error"
+                ></textarea>
+                <p class="error-msg" id="message-error" role="alert" hidden>Enter a message.</p>
+              </div>
+            </fieldset>
+
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>&copy; 2026 Maya Chen. Built with semantic HTML5.</small>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

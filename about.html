@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Maya Chen</title>
+  <meta name="description" content="Background, experience, and skills of Maya Chen, a frontend developer focused on accessible, semantic web development." />
+  <link rel="canonical" href="https://mayachen.dev/about.html" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="About — Maya Chen" />
+  <meta property="og:description" content="Background, experience, and skills of Maya Chen, a frontend developer focused on accessibility." />
+  <meta property="og:url" content="https://mayachen.dev/about.html" />
+  <meta name="theme-color" content="#f5f3ee" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Maya<span>.</span>Chen</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">☰</span> Menu
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> / <span aria-current="page">About</span>
+      </nav>
+    </div>
+
+    <section class="section" aria-labelledby="about-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;main&gt; &gt; &lt;section&gt; &gt; &lt;h1&gt;</span>
+        <div class="section__head">
+          <h1 id="about-heading">About</h1>
+          <p>Six years into building for the web, with a growing focus on the parts most sites skip.</p>
+        </div>
+        <p>I started out designing marketing pages, and got pulled toward accessibility work after watching someone navigate a site I'd built entirely by keyboard — and getting stuck. Since then, semantic structure and assistive-tech support have been the first thing I design for, not the last thing I patch in.</p>
+        <p>Outside of client work I write about markup patterns, review pull requests for a local accessibility meetup, and keep a running list of the ARIA mistakes I've made so I stop repeating them.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="experience-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;section&gt; &gt; &lt;ol class="timeline"&gt;</span>
+        <div class="section__head">
+          <h2 id="experience-heading">Experience</h2>
+          <p>A chronological list — order matters here, so it's a real ordered list under the hood.</p>
+        </div>
+        <ol class="timeline">
+          <li>
+            <time datetime="2024">2024 — Present</time>
+            <strong>Senior Frontend Developer, Northlight Studio</strong>
+            <p>Lead accessibility audits and semantic rebuilds for client sites, several taken from failing to passing WCAG 2.2 AA.</p>
+          </li>
+          <li>
+            <time datetime="2021">2021 — 2024</time>
+            <strong>Frontend Developer, Fieldnotes Co.</strong>
+            <p>Built and maintained the company's component library with accessibility built into every component by default.</p>
+          </li>
+          <li>
+            <time datetime="2019">2019 — 2021</time>
+            <strong>Junior Developer, Grantwell</strong>
+            <p>Rebuilt a multi-step grant application form to be fully keyboard and screen-reader navigable.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;section&gt; &gt; &lt;ul class="skills-list"&gt;</span>
+        <div class="section__head">
+          <h2 id="skills-heading">Skills</h2>
+        </div>
+        <ul class="skills-list">
+          <li>Semantic HTML5</li>
+          <li>WCAG 2.1 / 2.2</li>
+          <li>ARIA authoring practices</li>
+          <li>CSS &amp; layout systems</li>
+          <li>JavaScript</li>
+          <li>Screen reader testing</li>
+          <li>SEO fundamentals</li>
+          <li>Design systems</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>&copy; 2026 Maya Chen. Built with semantic HTML5.</small>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

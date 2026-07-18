@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maya Chen — Frontend Developer Portfolio</title>
+  <meta name="description" content="Maya Chen is a frontend developer specializing in accessible, semantic web experiences. Explore projects, background, and get in touch." />
+  <meta name="author" content="Maya Chen" />
+  <link rel="canonical" href="https://mayachen.dev/" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Maya Chen — Frontend Developer Portfolio" />
+  <meta property="og:description" content="Accessible, semantic web experiences built with care. Browse projects and get in touch." />
+  <meta property="og:url" content="https://mayachen.dev/" />
+  <meta property="og:site_name" content="Maya Chen" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Maya Chen — Frontend Developer Portfolio" />
+  <meta name="twitter:description" content="Accessible, semantic web experiences built with care." />
+
+  <meta name="theme-color" content="#f5f3ee" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Maya Chen",
+    "jobTitle": "Frontend Developer",
+    "url": "https://mayachen.dev/",
+    "sameAs": ["https://github.com/mayachen", "https://linkedin.com/in/mayachen"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Maya<span>.</span>Chen</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">☰</span> Menu
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;header&gt; + &lt;nav&gt; above, this is &lt;main&gt;&nbsp;&gt;&nbsp;&lt;section&gt;</span>
+        <p class="hero__eyebrow">Frontend Developer / Accessibility-minded builder</p>
+        <h1 id="hero-heading">Interfaces that read as clearly to a screen reader as they look on screen.</h1>
+        <p class="lede">I build fast, semantic websites — the kind where the markup itself tells you what everything means, not just how it's arranged.</p>
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="projects.html">View projects</a>
+          <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="approach-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;section aria-labelledby="approach-heading"&gt;</span>
+        <div class="section__head">
+          <h2 id="approach-heading">How I approach a build</h2>
+          <p>Four things I hold to on every project, regardless of size.</p>
+        </div>
+        <ol class="feature-list">
+          <li>
+            <span class="num" aria-hidden="true">1</span>
+            <div>
+              <strong>Semantic markup first.</strong>
+              <p>Real <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> elements, not endless <code>&lt;div&gt;</code> soup — so the structure carries meaning on its own.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">2</span>
+            <div>
+              <strong>ARIA where HTML alone falls short.</strong>
+              <p>Labels, roles, and live regions to keep custom interactions readable by assistive tech.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">3</span>
+            <div>
+              <strong>SEO baked in, not bolted on.</strong>
+              <p>Descriptive titles, meta descriptions, structured data, and a logical heading outline.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">4</span>
+            <div>
+              <strong>Keyboard-first testing.</strong>
+              <p>If it doesn't work cleanly with Tab, Shift+Tab, and Enter, it isn't done.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="highlights-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;section&gt; &gt; &lt;article&gt; × 3</span>
+        <div class="section__head">
+          <h2 id="highlights-heading">Recent work</h2>
+          <p>A few projects, in more depth on the projects page.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Transit Board</h3>
+            <p>A live-updating departures board built around ARIA live regions for real-time accessibility.</p>
+            <ul class="card__meta">
+              <li>ARIA live</li>
+              <li>Vanilla JS</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Fieldnotes CMS</h3>
+            <p>A lightweight blogging platform with a fully keyboard-navigable editor.</p>
+            <ul class="card__meta">
+              <li>Semantic HTML</li>
+              <li>Node</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Grantwell</h3>
+            <p>An accessible multi-step application form for a nonprofit grant program.</p>
+            <ul class="card__meta">
+              <li>WCAG 2.2 AA</li>
+              <li>Forms</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>&copy; 2026 Maya Chen. Built with semantic HTML5.</small>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

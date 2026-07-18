@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Maya Chen</title>
+  <meta name="description" content="A selection of accessible, semantic web projects by Maya Chen, including a live transit board, a CMS, and a nonprofit grant application form." />
+  <link rel="canonical" href="https://mayachen.dev/projects.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects — Maya Chen" />
+  <meta property="og:description" content="A selection of accessible, semantic web projects by Maya Chen." />
+  <meta property="og:url" content="https://mayachen.dev/projects.html" />
+  <meta name="theme-color" content="#f5f3ee" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Maya<span>.</span>Chen</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span aria-hidden="true">☰</span> Menu
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> / <span aria-current="page">Projects</span>
+      </nav>
+    </div>
+
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="wrap">
+        <span class="tag-callout">&lt;main&gt; &gt; &lt;section&gt; &gt; &lt;article&gt; × N</span>
+        <div class="section__head">
+          <h1 id="projects-heading">Projects</h1>
+          <p>Each of these is its own self-contained piece of writing, so each one is a real <code>&lt;article&gt;</code>.</p>
+        </div>
+
+        <article class="card" aria-labelledby="proj-transit">
+          <h2 id="proj-transit">Transit Board</h2>
+          <figure>
+            <img src="https://placehold.co/640x260/14213d/f5f3ee?text=Transit+Board" alt="Departures board interface showing a list of upcoming trains with times and platform numbers" width="640" height="260" loading="lazy" />
+            <figcaption>Live departures board, redesigned around an ARIA live region.</figcaption>
+          </figure>
+          <p>A public-transit departures board that announces changes to arrival times as they happen, using <code>aria-live="polite"</code> so screen reader users hear updates without losing their place.</p>
+          <ul class="card__meta">
+            <li>ARIA live regions</li>
+            <li>Vanilla JS</li>
+            <li>WebSocket</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="proj-cms" style="margin-top:1.5rem;">
+          <h2 id="proj-cms">Fieldnotes CMS</h2>
+          <figure>
+            <img src="https://placehold.co/640x260/2b4c7e/f5f3ee?text=Fieldnotes+CMS" alt="Blog post editor interface with a formatting toolbar and a document outline sidebar" width="640" height="260" loading="lazy" />
+            <figcaption>Editor UI with a fully keyboard-operable formatting toolbar.</figcaption>
+          </figure>
+          <p>A lightweight blogging platform for a small newsroom. Every toolbar control is reachable and operable by keyboard alone, with roving <code>tabindex</code> across the toolbar buttons.</p>
+          <ul class="card__meta">
+            <li>Semantic HTML</li>
+            <li>Node.js</li>
+            <li>Keyboard nav</li>
+          </ul>
+        </article>
+
+        <article class="card" aria-labelledby="proj-grantwell" style="margin-top:1.5rem;">
+          <h2 id="proj-grantwell">Grantwell Application Form</h2>
+          <figure>
+            <img src="https://placehold.co/640x260/f4a300/14213d?text=Grantwell+Form" alt="Multi-step grant application form showing a progress indicator and the current step's fields" width="640" height="260" loading="lazy" />
+            <figcaption>Step 2 of 4 in the rebuilt grant application flow.</figcaption>
+          </figure>
+          <p>A four-step application form for a nonprofit grant program, rebuilt with grouped <code>&lt;fieldset&gt;</code>/<code>&lt;legend&gt;</code> pairs and inline error messages tied to their fields with <code>aria-describedby</code>.</p>
+          <ul class="card__meta">
+            <li>WCAG 2.2 AA</li>
+            <li>Form validation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>&copy; 2026 Maya Chen. Built with semantic HTML5.</small>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
